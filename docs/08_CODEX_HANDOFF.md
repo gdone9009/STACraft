@@ -224,3 +224,37 @@ Codex가 사용자에게 다시 묻지 않고 다음을 이해할 수 있어야 
 - 현재 체험은 설계 메모·자기 점검이며 실제 AI 실행, 동료 연결, 자동저장, 신청/결제를 제공하지 않음. 실적 및 가격을 임의로 추가하지 않음.
 - 랜딩 V2는 전체 Education MVP v0.2 완성을 의미하지 않음. 6개 완전한 Case Pack, Hint/Failure/Reference/Portfolio는 기존 다음 Sprint로 유지.
 - 상세 평가: docs/09_LANDING_V2_REVIEW.md
+
+
+## 2026-09-16 Advanced Challenge Pack
+
+새 Reference Case:
+`challenges/advanced-customer-risk-01/`
+
+현재 포함:
+- README / TASK / RUBRIC
+- Data Dictionary
+- 정상 Synthetic CSV 6종
+- Failure CSV 3종
+- Submission Template
+- Model Risk Scores
+- Model Executive Brief
+- Model Data Quality Report
+- Model Human × AI Workflow
+- Reference Python Scorer
+
+정상 데이터 기준 Reference:
+- HIGH/CRITICAL: 5 accounts
+- MRR at Risk: 25,600,000 KRW
+- Priority: C012 → C004 → C010
+
+다음 권장 구현:
+1. 이 Pack을 Web Sandbox에 읽어오는 Challenge Detail UI
+2. CSV/Markdown 제출 Mock
+3. deterministic scorer
+4. rubric score breakdown
+5. Retry / score history
+6. leaderboard는 실제 사용자 검증 이후 최소형으로 추가
+
+주의:
+Reference 폴더를 첫 화면에서 노출하지 말 것. 학습자 제출 또는 gating 이후에만 비교자료로 연결한다.

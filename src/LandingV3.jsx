@@ -1,0 +1,22 @@
+import React from 'react';
+import {ArrowRight,CheckCircle2,Coffee,HeartHandshake,Lightbulb,MousePointer2,Sparkles,Users,Workflow} from 'lucide-react';
+import './v3.css';
+
+const weeks=[
+ ['1주차','내 일을 골라봐요','매주 반복하는 업무 하나를 골라 어디가 번거로운지 함께 찾아봅니다.',Lightbulb],
+ ['2주차','AI와 나눠서 해봐요','AI에게 맡길 일과 내가 직접 판단할 일을 나누고, 작은 자동화를 만들어봅니다.',Workflow],
+ ['3주차','막히는 곳을 고쳐봐요','잘 안 되는 부분을 동료와 함께 살펴보고 1:1 도움을 받아 내 방식으로 고칩니다.',HeartHandshake],
+ ['4주차','내 결과물로 남겨요','배운 내용을 실제로 보여줄 수 있는 나만의 AI 업무 포트폴리오로 정리합니다.',Sparkles]
+];
+const who=['AI가 좋다는데 어디서부터 시작할지 막막한 분','유튜브와 강의는 많이 봤지만 내 업무에는 못 써본 분','질문하기 눈치 보여 혼자 끙끙대 본 분','퇴직·이직·창업을 준비하며 새로운 무기가 필요한 분'];
+export default function LandingV3(){return <div className="v3">
+<header className="v3nav"><a href="#top" className="v3brand"><span>STA</span><b>S.T.A.크래프트</b></a><nav><a href="#how">어떻게 배우나요?</a><a href="#weeks">4주 과정</a><a href="#result">완성하는 것</a></nav><a className="v3mini" href="#start">가볍게 둘러보기</a></header>
+<main id="top">
+<section className="v3hero"><div className="v3copy"><div className="v3eyebrow"><Coffee size={17}/> AI가 낯선 경력자를 위한 4주 실전 연습</div><h1>AI, 잘 몰라도<br/><em>괜찮습니다.</em></h1><p className="v3lead">혼자 공부하다 막히지 마세요.<br/>동료와 같이 해보고, 필요할 때 1:1로 도움받으며<br/><strong>내 업무에 바로 쓰는 AI 자동화</strong>를 하나씩 만들어봅니다.</p><div className="v3actions"><a href="#how" className="v3primary">어떻게 배우는지 보기 <ArrowRight size={18}/></a><a href="?version=2" className="v3secondary">실제 과제 먼저 체험하기</a></div><div className="v3trust"><span><CheckCircle2/> 코딩을 몰라도</span><span><CheckCircle2/> 질문이 서툴러도</span><span><CheckCircle2/> 내 업무부터 천천히</span></div></div><div className="v3scene" aria-label="혼자가 아니라 함께 배우는 과정을 표현한 카드"><div className="bubble one">“이걸 AI로 할 수 있을까요?”</div><div className="bubble two">“네. 먼저 하던 일을 같이 적어봐요.”</div><div className="desk"><div className="avatar">나</div><div><small>오늘의 작은 성공</small><b>매주 2시간 걸리던<br/>보고서 초안 만들기</b><span>직접 해냈어요 ✓</span></div></div><div className="v3note"><Users/> 혼자 듣는 강의가 아니라<br/><b>같이 해보는 연습입니다.</b></div></div></section>
+<section className="v3problem"><p>혹시 이런 생각을 해보셨나요?</p><div><b>“AI가 중요하다는 건 알겠는데…”</b><span>뭘 배워야 하지?</span><span>내 일에도 쓸 수 있나?</span><span>이런 걸 물어봐도 되나?</span></div><h2>그래서 어려운 말보다<br/><em>“내가 하던 일”</em>에서 시작합니다.</h2></section>
+<section id="how" className="v3section"><div className="v3heading"><span>배우는 방법</span><h2>듣기만 하지 않고,<br/>세 가지를 반복합니다.</h2><p>완벽하게 이해한 뒤 시작할 필요가 없습니다. 작은 업무 하나를 직접 해보면서 익힙니다.</p></div><div className="v3three"><article><span>01</span><MousePointer2/><h3>직접 해보기</h3><p>내가 자주 하는 일을 골라 AI와 함께 처리해봅니다. 처음에는 아주 작은 일이어도 좋습니다.</p></article><article><span>02</span><Users/><h3>동료와 같이 보기</h3><p>서로 만든 것을 보여주고 “나는 이렇게 했어요”를 나눕니다. 혼자서는 안 보이던 방법이 보입니다.</p></article><article><span>03</span><HeartHandshake/><h3>1:1로 막힘 풀기</h3><p>막힌 부분은 그냥 넘어가지 않습니다. 내 속도와 업무에 맞춰 질문하고 다시 해봅니다.</p></article></div></section>
+<section id="weeks" className="v3weeks"><div className="v3heading"><span>딱 4주</span><h2>한 주에 한 걸음이면 충분합니다.</h2><p>목표는 AI 전문가가 되는 것이 아닙니다. <strong>내 일을 AI와 함께 해낼 수 있는 사람</strong>이 되는 것입니다.</p></div><div className="v3weekgrid">{weeks.map(([w,h,p,I])=><article key={w}><div><b>{w}</b><I/></div><h3>{h}</h3><p>{p}</p></article>)}</div></section>
+<section id="result" className="v3result"><div><span className="v3tag">4주 뒤 내 손에 남는 것</span><h2>“AI를 배웠어요”가 아니라<br/><em>“이걸 제가 만들었어요.”</em></h2><p>내 업무를 어떻게 바꿨는지 설명하고 직접 보여줄 수 있는 결과물을 만듭니다. 이것이 당신의 <strong>실무 자동화 포트폴리오</strong>입니다.</p><small>예: 보고서 초안 만들기 · 회의 내용 정리 · 고객 문의 분류 · 자료 조사 흐름 만들기</small></div><div className="v3portfolio"><span>MY AI WORK</span><h3>매주 반복하던<br/>업무를 바꿔봤습니다.</h3><ul><li>문제: 보고서 작성에 시간이 오래 걸림</li><li>방법: 자료 정리와 초안은 AI가 도움</li><li>내 역할: 숫자 확인과 최종 판단</li><li>결과: 내가 다시 사용할 수 있는 업무 흐름</li></ul><b>내 경험 + AI = 새로운 업무 방식</b></div></section>
+<section className="v3for"><div className="v3heading"><span>이런 분이라면</span><h2>잘 오셨습니다.</h2></div><div className="v3who">{who.map((x,i)=><div key={x}><b>{String(i+1).padStart(2,'0')}</b><p>{x}</p></div>)}</div><p className="v3quiet">20년 경력이 AI 때문에 사라지는 것이 아닙니다.<br/><strong>이미 잘 아는 일에 새로운 도구 하나를 더하는 것</strong>부터 시작합니다.</p></section>
+<section id="start" className="v3final"><Sparkles/><h2>처음부터 잘할 필요 없습니다.<br/><em>같이 한 번 해보면 됩니다.</em></h2><p>부담 없이 실제 과제를 먼저 구경해보세요.<br/>가상 데이터라 회사 자료를 준비할 필요도 없습니다.</p><a href="?version=2#lab" className="v3primary">무료 과제 구경하기 <ArrowRight size={18}/></a><small>현재 공개 검증용 프로토타입입니다. 정규 과정과 1:1 지원은 검증·준비 중입니다.</small></section>
+</main><footer className="v3footer"><b>S.T.A.크래프트 · Landing V3</b><span>경험을 버리지 않고, AI와 함께 다시 쓰는 4주.</span></footer></div>}

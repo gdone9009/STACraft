@@ -1,0 +1,13 @@
+customer_id,customer_name,renewal_days,usage_drop_pct,adoption_pct,inactive_days,raw_score,mitigation_adjustment,final_score,risk_level,override,at_risk_mrr_krw,evidence
+C001,AlphaWorks,35,42.3,45.0,1,65,0,65,HIGH,,4800000,"renewal<=60d; usage_drop>=30%; CHAMPION_LEFT verified"
+C002,BlueHarbor,166,4.4,71.7,0,0,0,0,LOW,,0,"no scoring signal"
+C003,CoreMedi,51,57.9,33.3,5,55,-20,35,MEDIUM,PLANNED_SHUTDOWN,0,"renewal<=60d; usage_drop>=30%; adoption<40%; planned shutdown mitigation"
+C004,DeltaRetail,16,68.4,24.0,14,110,0,100,CRITICAL,,2700000,"renewal<=60d; usage_drop>=30%; adoption<40%; inactivity>=14d; overdue>30d; >=2 P1/P2"
+C005,EduSpark,25,-1.7,76.2,0,20,0,0,LOW,RENEWAL_SIGNED,0,"renewal proximity exists but verified renewal signed overrides risk"
+C006,FinPeak,107,7.7,80.0,0,0,0,0,LOW,,0,"no scoring signal"
+C007,GreenForge,40,58.3,33.3,3,55,-20,35,MEDIUM,MIGRATION_WINDOW,0,"renewal<=60d; usage_drop>=30%; adoption<40%; migration mitigation"
+C008,HanulLabs,61,64.0,25.7,6,55,0,55,HIGH,,3600000,"usage_drop>=30%; adoption<40%; overdue>30d"
+C009,InsightHub,197,2.8,87.5,0,0,0,0,LOW,,0,"no scoring signal"
+C010,JunoLogistics,45,40.2,50.0,0,80,0,80,CRITICAL,EXECUTIVE_ESCALATION,6200000,"renewal<=60d; usage_drop>=30%; >=2 P1/P2; executive escalation"
+C011,Kinetix,91,2.5,70.9,1,0,0,0,LOW,,0,"no scoring signal"
+C012,LuminaCare,27,68.2,25.0,18,135,0,100,CRITICAL,CANCELLATION_REQUEST,8300000,"renewal<=60d; usage_drop>=30%; adoption<40%; inactivity>=14d; overdue>30d; cancellation request"

@@ -1,0 +1,8 @@
+event_id,customer_id,event_date,event_type,verified,valid_until,detail
+E-001,C001,2026-09-08,CHAMPION_LEFT,TRUE,2026-10-31,Primary internal sponsor left the customer organization
+E-002,C003,2026-08-25,PLANNED_SHUTDOWN,TRUE,2026-09-30,Planned facility maintenance reduces user activity during September
+E-003,C005,2026-09-12,RENEWAL_SIGNED,TRUE,2027-10-10,Successor agreement signed and begins immediately after current term
+E-004,C007,2026-09-01,MIGRATION_WINDOW,TRUE,2026-09-25,ERP migration is expected to reduce normal workflow volume
+E-005,C008,2026-09-13,BUDGET_REVIEW,FALSE,2026-09-30,Unverified note from a sales conversation
+E-006,C010,2026-09-09,EXECUTIVE_ESCALATION,TRUE,2026-09-30,VP Operations requested executive review of repeated service issues
+E-007,C012,2026-09-11,CANCELLATION_REQUEST,TRUE,2026-09-30,CFO requested a cancellation and settlement quotation

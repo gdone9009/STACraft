@@ -241,3 +241,31 @@ Prototype 실사용 테스트 시:
 - 현재 체험은 설계 메모·자기 점검이며 실제 AI 실행, 동료 연결, 자동저장, 신청/결제를 제공하지 않음. 실적 및 가격을 임의로 추가하지 않음.
 - 랜딩 V2는 전체 Education MVP v0.2 완성을 의미하지 않음. 6개 완전한 Case Pack, Hint/Failure/Reference/Portfolio는 기존 다음 Sprint로 유지.
 - 상세 평가: docs/09_LANDING_V2_REVIEW.md
+
+
+## 2026-09-16 Advanced Challenge Reference Pack
+
+P0 Reference Case로 `challenges/advanced-customer-risk-01/`를 추가했다.
+
+구성:
+- 복수 데이터소스: Customer / Contract / Invoice / Usage / Support / Account Event
+- 정상 Synthetic Dataset
+- 의도적으로 손상된 Failure Dataset
+- 명시적 Business Rule 및 Override
+- 100점 Rubric
+- Submission Schema
+- Reference Risk Score / Executive Brief / Data Quality / Workflow
+- 재현용 Python Scorer
+
+이 Case는 향후 Challenge Platform의 평가모델 기준으로 사용한다.
+
+권장 채점 구조:
+1. Deterministic Test — schema, score, MRR, failure detection
+2. AI Judge — 설명력, 근거 연결, Workflow 설계
+3. Human Sample Review — 고객조치·정책판단이 필요한 고위험 답안 표본검토
+
+중요 UX:
+- Reference는 학습자 시도 전에 기본 노출하지 않는다.
+- Failure Pack은 정상 점수 계산 후 Break & Fix 단계에서 투입한다.
+- 데이터 오류 발생 시 숫자를 임의보정하기보다 DATA_ERROR / quarantine 상태를 보여준다.
+- 고객 대외행동은 자동화하지 않고 Human Approval을 유지한다.

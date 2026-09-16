@@ -1,0 +1,13 @@
+customer_id,customer_name,segment,industry,region,owner_team,cs_tier
+C001,AlphaWorks,Enterprise,Manufacturing,KR,Team-A,High-touch
+C002,BlueHarbor,Growth,Professional Services,KR,Team-B,Standard
+C003,CoreMedi,Enterprise,Healthcare,KR,Team-A,High-touch
+C004,DeltaRetail,Growth,Retail,KR,Team-C,Standard
+C005,EduSpark,Enterprise,Education,KR,Team-B,High-touch
+C006,FinPeak,Enterprise,Financial Services,KR,Team-A,High-touch
+C007,GreenForge,Enterprise,Manufacturing,KR,Team-C,High-touch
+C008,HanulLabs,Growth,Technology,KR,Team-B,Standard
+C009,InsightHub,Enterprise,Data Services,KR,Team-A,High-touch
+C010,JunoLogistics,Enterprise,Logistics,KR,Team-C,High-touch
+C011,Kinetix,Growth,Media,KR,Team-B,Standard
+C012,LuminaCare,Enterprise,Healthcare,KR,Team-A,High-touch

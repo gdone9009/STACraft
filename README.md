@@ -93,3 +93,18 @@ P2: MY WORK, Peer Review Mock, Portfolio Export, Vercel Preview polish.
 - 학습자 대신 AI가 최종 답을 먼저 생성
 - 실제 Secret/API Key 커밋
 - 실제 회사 기밀데이터를 Sample로 사용
+
+
+## Advanced Challenge Reference Pack
+
+2026-09-16 추가:
+
+- `challenges/advanced-customer-risk-01/`
+- 가상 B2B SaaS 고객이탈·매출위험 조기경보 과제
+- 정상 데이터 6종 + Failure Dataset 3종
+- 문제정의 / Business Rule / 100점 Rubric / 제출 Template
+- 고객별 Risk Score, Executive Brief, Data Quality Report, Human × AI Workflow 모범답안
+- Python 표준라이브러리 기반 재현용 Reference Scorer
+- 정상 데이터 기준 모범 결과: HIGH/CRITICAL 5개, MRR at Risk 25,600,000원
+
+이 Pack은 실제 고객성과가 아니라 **교육모델 검증용 Synthetic Reference Case**입니다. 향후 Kaggle형 Challenge UX와 자동채점 구조를 검증하기 위한 기준 사례로 사용합니다.

@@ -230,3 +230,36 @@ Level 5 Workflow Architect
 
 현재 Lab 20의 목표는 주로 Level 3, Lab 40의 목표는 Level 5 도전으로 본다. 실제 Level 도달 여부는 Pilot 후 평가도구를 통해 검증한다.
 
+
+
+## 13. Advanced Challenge Reference
+
+2026-09-16 기준 첫 고급 Reference Pack:
+
+**B2B SaaS 고객이탈·매출위험 조기경보**
+
+경로:
+`challenges/advanced-customer-risk-01/`
+
+학습자가 수행하는 흐름:
+
+1. 여러 데이터셋 이해
+2. Data Quality Audit
+3. Business Rule 구현
+4. 고객별 위험점수 계산
+5. 상충 신호 및 예외/완화 이벤트 적용
+6. MRR at Risk 산출
+7. Executive Brief 작성
+8. Human × AI Workflow 설계
+9. Failure Dataset 투입
+10. 오류 탐지·격리·수정
+11. 정책 변경 Transfer Question
+
+핵심 교육 차이:
+- 단일 정답 계산이 아니라 데이터 신뢰성까지 평가한다.
+- AI 설명과 deterministic rule을 분리한다.
+- `RENEWAL_SIGNED`, `PLANNED_SHUTDOWN`, `MIGRATION_WINDOW`처럼 현업 예외를 포함한다.
+- 정상 데이터에서 맞는 Workflow가 깨진 데이터에서도 안전한지 검증한다.
+- 모범답안은 Challenge Before Answer 원칙에 따라 학습자 시도 후 비교 자료로 사용한다.
+
+이 패턴을 향후 고급 Case Pack의 공통 골격으로 검증한다.
